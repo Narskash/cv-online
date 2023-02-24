@@ -16,24 +16,17 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
-
-    <div class="nav-bg low-rez">
+    <header class="nav-bg low-rez">
         <nav class="nav-principal contenedor">
-            <a href="#">Home</a>
-            <a href="#">Formación</a>
-            <a href="#">Experiencia Laboral</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Contacto</a>
+            <a href="#enCurso">En Curso</a>
+            <a href="#cursosExtension">Experiencia Laboral</a>
+            <a href="#contacto">Contacto</a>
         </nav>
-    </div>
-
+    </header>
     <section class="hero">
         <div class="contenido-hero">
             <h1 class="titulo">Alejandro Caputo</h1>
-            <p>DISEÑADOR GRÁFICO, DISEÑADOR WEB & MARKETING EN BUENOS AIRES</p>
+            <p class="uppercase">Diseñador gráfico, diseñador web & marketing en buenos aires</p>
             <p class="low-rez">Con más de 10 años de experiencia en el diseño y desarrollo de marcas. Sigo
                 actualizándome en las nuevas
                 tecnologías y formas de comunicación, con gran interés por la programación.</p>
@@ -68,41 +61,42 @@
             </div>
         </div><!-- .contenido-hero -->
     </section>
-
     <main class="contenedor sombra">
-        <section id="aprendiendo" class="top">
+        <section id="enCurso" class="top">
             <h2 class="titulo">Actualmente estoy aprendiendo</h2>
-            <p>Desarrollo frontend Argentina Programa 4.0</p>
-            <p>Testing de Software Espacio Educa</p>
-        </section><!-- End aprendiendo Section -->
-
+            <p><b>Desarrollo Frontend</b> Argentina Programa 4.0</p>
+            <p><b>Testing de Software</b> Espacio Educa</p>
+        </section>
+        <hr>
         <section id="formacion" class="">
             <h2 class="titulo">Formación</h2>
-            <p>Diseñador Gráfico (1999 - 2003) Facultad de Arquitectura, Diseño y Urbanismo - UBA</p>
-            <p>Bachiller en Comunicación Social (1992 - 1998) E.E.M.N. N° 1 - Julio Cortázar</p>
-        </section><!-- End formacion Section -->
-
+            <p><b>Diseñador Gráfico</b><span> (1999 - 2003)</span> Facultad de Arquitectura, Diseño y Urbanismo - UBA
+            </p>
+            <p><b>Bachiller en Comunicación Social</b><span> (1992 - 1998)</span> E.E.M.N. N° 1 - Julio Cortázar</p>
+        </section>
+        <hr>
         <section id="cursosExtension" class="">
             <h2 class="titulo">Cursos de Extensión</h2>
-            <p>Excel: Fórmulas y Funciones Unab (2022)</p>
-            <p>Git Espacio Educa (2022)</p>
-            <p>Diseño en Canva Unab (2022)</p>
-            <p>Community Manager Unab (2022)</p>
-            <p>Pre-prensa Digital Gutenberg (2005)</p>
-        </section><!-- End cursosExtension Section -->
-
+            <p><b>Excel: Fórmulas y Funciones</b> - Unab <span>(2022)</span></p>
+            <p><b>Git</b> - Espacio Educa <span>(2022)</span></p>
+            <p><b>Diseño en Canva</b> - Unab <span>(2022)</span></p>
+            <p><b>Community Manager</b> - Unab <span>(2022)</span></p>
+            <p><b>Pre-prensa Digital</b> - Gutenberg <span>(2005)</span></p>
+        </section>
+        <hr>
         <section id="experienciaLaboral" class="">
             <h2 class="titulo">Experiencia Laboral</h2>
-            <p>RODAMIENTOS PARTICULARES S.A. (2015 - 2022) Diseñador Gráfico & Marketing Rediseño de Isologotipo, Imagen
+            <p><b>RODAMIENTOS PARTICULARES S.A. </b><span>(2015 - 2022) </span>- Diseñador Senior<br>
+                Diseñador Gráfico & Marketing, Rediseño de Isologotipo, Imagen
                 Corporativa, Diseño Web, Publicidad, Revista Digital, Catálogos,
                 Diseño y Maquetado de Formularios Digitales, Fotografía de Producto, Marketing.</p>
-            <p>CCG DISEÑO INTEGRAL (2004 - 2015) Diseñador Gráfico Diseño y desarrollo de marca, Isologotipo, Packaging,
+            <p><b>CCG DISEÑO INTEGRAL </b><span>(2004 - 2015) </span>- Diseñador Junior<br>
+                Diseñador Gráfico Diseño y desarrollo de marca, Isologotipo, Packaging,
                 Publicidad, Diseño Web, Estudio de Mercado.</p>
-        </section><!-- End experienciaLaboral Section -->
-
-        <h2>Habilidades & Herramientas</h2>
+        </section>
+        <hr>
+        <h2 id="titulo-habilidades">Habilidades & Herramientas</h2>
         <div class="habilidades">
-
             <section>
                 <h3 class="titulo">Habilidades</h3>
                 <ul>
@@ -115,7 +109,6 @@
                     <li>Packaging</li>
                 </ul>
             </section>
-
             <section>
                 <h3 class="titulo">Herramients Digitales</h3>
                 <ul>
@@ -130,51 +123,41 @@
                 </ul>
             </section>
         </div> <!-- .habilidades -->
-
         <section id="contacto" class="">
             <h2 class="titulo">Contacto</h2>
-            <form class="formulario" action="" method="get">
+            <form id="formulario" class="formulario" action="" method="">
                 <fieldset>
                     <legend>Contactános llenando todos los campos</legend>
-
                     <div class="contenedor-campos">
                         <div class="campo">
-                            <label for="nombre">Nombre</label>
-                            <input class="imput-text" type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
+                            <label for="nombre">Nombre <span>(requerido)</span></label>
+                            <input class="imput-text" type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
                         </div>
                         <div class="campo">
-                            <label for="telefono">Teléfono</label>
+                            <label for="telefono">Teléfono <span>(requerido)</span></label>
                             <input class="imput-text" type="tel" id="telefono" name="telefono"
-                                placeholder="Tu Teléfono">
+                                placeholder="Tu Teléfono" required>
                         </div>
                         <div class="campo">
-                            <label for="email">Correo electronico</label>
-                            <input class="imput-text" type="email" id="email" name="email" placeholder="Tu email">
+                            <label for="email">Correo electronico <span>(requerido)</span></label>
+                            <input class="imput-text" type="email" id="email" name="Email" placeholder="Tu email" required>
                         </div>
                         <div class="campo">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea class="imput-text" name="mensaje"></textarea>
+                            <label for="mensaje">Mensaje <span>(requerido)</span></label>
+                            <textarea class="imput-text" name="mensaje" required></textarea>
                         </div>
-
                     </div><!-- .contenedor-campos -->
-
                     <div class="alinear-derecha flex">
                         <input class="boton w-100" type="submit" value="Enviar">
                     </div>
-
-
                 </fieldset>
-            </form>
-        </section><!-- End contacto Section -->
-
-
+            </form><!-- .formulario -->
+        </section>
     </main>
-
-
-
     <footer class="footer">
         <p>Todos los derechos reservados. cv-online</p>
-    </footer><!-- End footer -->
+    </footer>
+    <script src="js/form.js"></script>
 </body>
 
 </html>
