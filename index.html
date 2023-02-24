@@ -6,75 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv-online</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
 
-    </header><!-- End header -->
+    </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Formación</a>
-        <a href="#">Experiencia Laboral</a>
-        <a href="#">Habilidades</a>
-        <a href="#">Contacto</a>
-    </nav><!-- End nav -->
+    <div class="nav-bg low-rez">
+        <nav class="nav-principal contenedor">
+            <a href="#">Home</a>
+            <a href="#">Formación</a>
+            <a href="#">Experiencia Laboral</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
 
-    <section id="hero">
-        <h1>Alejandro Caputo</h1>
-        <p>DISEÑADOR GRÁFICO, DISEÑADOR WEB & MARKETING EN BUENOS AIRES</p>
-        <p>Con más de 10 años de experiencia en el diseño y desarrollo de marcas. Sigo actualizándome en las nuevas
-            tecnologías y formas de comunicación, con gran interés por la programación.</p>
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-gmail" width="40"
-                height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />
-                <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" />
-                <path d="M16 4l-4 4l-4 -4" />
-                <path d="M4 6.5l8 7.5l8 -7.5" />
-            </svg>
+    <section class="hero">
+        <div class="contenido-hero">
+            <h1 class="titulo">Alejandro Caputo</h1>
+            <p>DISEÑADOR GRÁFICO, DISEÑADOR WEB & MARKETING EN BUENOS AIRES</p>
+            <p class="low-rez">Con más de 10 años de experiencia en el diseño y desarrollo de marcas. Sigo
+                actualizándome en las nuevas
+                tecnologías y formas de comunicación, con gran interés por la programación.</p>
+            <div class="redes-sociales">
+                <a href="mailto:eldamri@gmail.com"> <svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-gmail" width="40" height="40" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />
+                        <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" />
+                        <path d="M16 4l-4 4l-4 -4" />
+                        <path d="M4 6.5l8 7.5l8 -7.5" />
+                    </svg></a>
+                <a href="https://www.linkedin.com/in/amcaputo-dg" target="_blank"> <svg
+                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                        width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg></a>
+                <a href="https://narskash.github.io/Narskash" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg></a>
+            </div>
+        </div><!-- .contenido-hero -->
+    </section>
 
-            <a href="mailto:eldamri@gmail.com">Email</a>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="40"
-                height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <rect x="4" y="4" width="16" height="16" rx="2" />
-                <line x1="8" y1="11" x2="8" y2="16" />
-                <line x1="8" y1="8" x2="8" y2="8.01" />
-                <line x1="12" y1="16" x2="12" y2="11" />
-                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-            </svg>
-            <a href="https://www.linkedin.com/in/amcaputo-dg">LinkedIn</a>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40"
-                height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-            </svg>
-            <a href="https://narskash.github.io/Narskash">GitHub</a>
-        </p>
-    </section><!-- End yo section -->
-
-    <main>
-        <section id="aprendiendo" class="">
-            <h2>Actualmente estoy aprendiendo</h2>
+    <main class="contenedor sombra">
+        <section id="aprendiendo" class="top">
+            <h2 class="titulo">Actualmente estoy aprendiendo</h2>
             <p>Desarrollo frontend Argentina Programa 4.0</p>
             <p>Testing de Software Espacio Educa</p>
         </section><!-- End aprendiendo Section -->
 
         <section id="formacion" class="">
-            <h2>Formación</h2>
+            <h2 class="titulo">Formación</h2>
             <p>Diseñador Gráfico (1999 - 2003) Facultad de Arquitectura, Diseño y Urbanismo - UBA</p>
             <p>Bachiller en Comunicación Social (1992 - 1998) E.E.M.N. N° 1 - Julio Cortázar</p>
         </section><!-- End formacion Section -->
 
         <section id="cursosExtension" class="">
-            <h2>Cursos de Extensión</h2>
+            <h2 class="titulo">Cursos de Extensión</h2>
             <p>Excel: Fórmulas y Funciones Unab (2022)</p>
             <p>Git Espacio Educa (2022)</p>
             <p>Diseño en Canva Unab (2022)</p>
@@ -83,7 +92,7 @@
         </section><!-- End cursosExtension Section -->
 
         <section id="experienciaLaboral" class="">
-            <h2>Experiencia Laboral</h2>
+            <h2 class="titulo">Experiencia Laboral</h2>
             <p>RODAMIENTOS PARTICULARES S.A. (2015 - 2022) Diseñador Gráfico & Marketing Rediseño de Isologotipo, Imagen
                 Corporativa, Diseño Web, Publicidad, Revista Digital, Catálogos,
                 Diseño y Maquetado de Formularios Digitales, Fotografía de Producto, Marketing.</p>
@@ -91,65 +100,79 @@
                 Publicidad, Diseño Web, Estudio de Mercado.</p>
         </section><!-- End experienciaLaboral Section -->
 
-        <section id="habilidades" class="">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Diseño de marca</li>
-                <li>Diseño Ux</li>
-                <li>Diseño Web</li>
-                <li>Edición de Video</li>
-                <li>Fotografía</li>
-                <li>Marketing</li>
-                <li>Packaging</li>
-            </ul>
-        </section><!-- End habilidades Section -->
+        <h2>Habilidades & Herramientas</h2>
+        <div class="habilidades">
 
-        <section id="herramientasDigitales" class="">
-            <h2>Herramients Digitales</h2>
-            <ul>
-                <li>Illustrator</li>
-                <li>Photoshop</li>
-                <li>InDesign</li>
-                <li>Acrobat</li>
-                <li>Premiere</li>
-                <li>Word</li>
-                <li>Excel</li>
-                <li>Visual Studio Code</li>
-            </ul>
-        </section><!-- End herramientasDigitales Section -->
-    </main><!-- End main -->
+            <section>
+                <h3 class="titulo">Habilidades</h3>
+                <ul>
+                    <li>Diseño de marca</li>
+                    <li>Diseño Ux</li>
+                    <li>Diseño Web</li>
+                    <li>Edición de Video</li>
+                    <li>Fotografía</li>
+                    <li>Marketing</li>
+                    <li>Packaging</li>
+                </ul>
+            </section>
 
-    <section id="contacto" class="">
-        <h2>contacto</h2>
-        <form action="" method="get">
-            <fieldset>
-                <legend>llene todos los campos</legend>
+            <section>
+                <h3 class="titulo">Herramients Digitales</h3>
+                <ul>
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                    <li>InDesign</li>
+                    <li>Acrobat</li>
+                    <li>Premiere</li>
+                    <li>Word</li>
+                    <li>Excel</li>
+                    <li>Visual Studio Code</li>
+                </ul>
+            </section>
+        </div> <!-- .habilidades -->
 
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
-                </div>
-                <div>
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono">
-                </div>
-                <div>
-                    <label for="email">Correo electronico</label>
-                    <input type="email" id="email" name="email" placeholder="Tu email">
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" class=""></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
+        <section id="contacto" class="">
+            <h2 class="titulo">Contacto</h2>
+            <form class="formulario" action="" method="get">
+                <fieldset>
+                    <legend>Contactános llenando todos los campos</legend>
 
-            </fieldset>
-        </form>
-    </section><!-- End contacto Section -->
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input class="imput-text" type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Teléfono</label>
+                            <input class="imput-text" type="tel" id="telefono" name="telefono"
+                                placeholder="Tu Teléfono">
+                        </div>
+                        <div class="campo">
+                            <label for="email">Correo electronico</label>
+                            <input class="imput-text" type="email" id="email" name="email" placeholder="Tu email">
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="imput-text" name="mensaje"></textarea>
+                        </div>
 
-    <footer>
+                    </div><!-- .contenedor-campos -->
+
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-100" type="submit" value="Enviar">
+                    </div>
+
+
+                </fieldset>
+            </form>
+        </section><!-- End contacto Section -->
+
+
+    </main>
+
+
+
+    <footer class="footer">
         <p>Todos los derechos reservados. cv-online</p>
     </footer><!-- End footer -->
 </body>
